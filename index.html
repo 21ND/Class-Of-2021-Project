@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHS Class of 2021</title>
+    <style>
+            body {
+                background-color:#33AA33;
+                font-family:Arial, sans-serif;
+            }
+            video {
+                width: 70%;
+                height: auto;
+                border: 5px solid #fff;
+                border-radius: 10px;
+            }
+            .video-container {
+                display: flex;
+                justify-content: center; /* Centers horizontally */
+                align-items: center; /* Centers vertically if needed */
+                height: 100vh; /* Full viewport height */
+            }
+            .no-select {
+                user-select: none; /* Non standard, but widely supported */
+                -webkit-user-select: none; /* Safari */
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+            }
+    </style>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Optional: Additional check for ctrl+c
+        document.addEventListener('copy', function(e) {
+            alert("You are not allowed to copy content here!");
+            e.preventDefault();
+        });
+
+        // Optional: Additional check for developer tools
+        document.addEventListener('keydown', function(e) {
+            alert("You are not allowed to use developer tools here!");
+            e.preventDefault();
+        });
+
+        // Optional: Additional check for right-click.
+        document.addEventListener('contextmenu', function(e) {
+            alert("Right click is disabled as a preventatitve measure")
+            e.preventDefault();
+        });
+    </script>
+</head>
+<body>
+<h1 align="center">KHS Class of 2021 Webpage</h1>
+<table width="70%" align="center">
+<tr align="center">
+<td width="12.5%"><a href="index.html" style="color: white;">Home</a></td>
+<td width="1%">|</td>
+<td width="12.5%"><a href="gallery.html" style="color: white;">Gallery</a></td>
+<td width="1%">|</td>
+<td width="12.5%"><a href="artwork.html" style="color: white;">Artwork</a></td>
+<td width="1%">|</td>
+<td width="12.5%"><a href="extras.html" style="color: white;">Extras</a></td>
+<td width="1%">|</td>
+<td width="12.5%"><a href="contact.html" style="color: white;">Contact</a></td>
+</tr>
+</table>
+<p align="center">Welcome! I created this website as a personal experience project to share with KHS Class of 2021. This page will have my artwork listed here among others. Below is the car parade from June 12, 2021!</p>
+<div class="video-container">
+    <video id="KHS Class of 2021 Car Parade" loop>
+        <source src="Kecoughtan High School Graduation Parade 2021.mp4">
+    </video>
+</div>
+<div align="center">
+    <button onclick="document.getElementById('KHS Class of 2021 Car Parade').play()">Play</button>
+    <button onclick="document.getElementById('KHS Class of 2021 Car Parade').pause()">Pause</button>
+</div>
+<footer style="text-align: center">
+    <p>&copy; KHS Class of 2021. All rights reserved. Do not distribute any of the content featured here without prior written consent!!</p>
+</footer>
+</body>
+</html>

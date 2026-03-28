@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="icon" href="fav.ico" type="image/x-icon">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #33AA33;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #000000;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .video-container {
+            margin: 15px;
+            text-align: center;
+        }
+        video {
+            width: 300px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #ffffff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .video {
+            margin-bottom: 20px;
+        }
+        .video iframe {
+            width: 100%;
+            height: 450px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #000000;
+        }
+        .description {
+            font-size: 16px;
+            color: #000000;
+        }
+        .upload-date {
+            color: #000000;
+        }
+        .no-select {
+            user-select: none; /* Non standard, but widely supported */
+            -webkit-user-select: none; /* Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #000000;
+        }
+    </style>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Optional: Additional check for ctrl+c
+        document.addEventListener('copy', function(e) {
+            alert("You are not allowed to copy content here!");
+            e.preventDefault();
+        });
+
+        // Optional: Additional check for developer tools
+        document.addEventListener('keydown', function(e) {
+            alert("You are not allowed to use developer tools here!");
+            e.preventDefault();
+        });
+
+        // Optional: Additional check for right-click.
+        document.addEventListener('contextmenu', function(e) {
+            alert("Right click is disabled as a preventatitve measure")
+            e.preventDefault();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="extras.html" style="color: black;">Return To Menu</a></h1>
+        </header>
+        <div class="video">
+            <iframe src="zachmovieworld0001.mp4" frameborder="0" allowfullscreen></iframe>
+            <div class="title">World</div>
+            <div class="description">A still video of a world setting</div>
+        <div class="upload-date">June 7, 2018</div>
+        </div>
+        <footer>
+            <p>&copy;2018. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
