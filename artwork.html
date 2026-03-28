@@ -10,17 +10,23 @@
                 background-color:#33AA33;
                 font-family:Arial, sans-serif;
             }
-            video {
-                width: 70%;
-                height: auto;
-                border: 5px solid #fff;
-                border-radius: 10px;
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+                padding: 10px;
             }
-            .video-container {
-                display: flex;
-                justify-content: center; /* Centers horizontally */
-                align-items: center; /* Centers vertically if needed */
-                height: 100vh; /* Full viewport height */
+            .gallery-item {
+                text-align: center;
+            }
+            .gallery img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+            .date {
+                font-size: 14px;
+                color: black;
             }
             .no-select {
                 user-select: none; /* Non standard, but widely supported */
