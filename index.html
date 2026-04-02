@@ -27,6 +27,13 @@
                 -moz-user-select: none; /* Firefox */
                 -ms-user-select: none; /* Internet Explorer/Edge */
             }
+            .center {
+                display: flex;
+                justify-content: center;
+            }
+            .center-img {
+                max-width: 100%; /* Ensures responsiveness */
+            }
     </style>
     <script>
         document.addEventListener('contextmenu', function(e) {
@@ -68,7 +75,9 @@
 </tr>
 </table>
 <p align="center">Welcome! I created this website as a personal experience project to share with KHS Class of 2021. This page will have my artwork listed here among others. Below is the city hall building from June 20, 2021!</p>
-    <img src="June 20, 2021.jpg" style="align: center">
+    <div class="center">
+        <img class="center-img" src="June 20, 2021.jpg" alt="Hampton City Hall On June 20, 2021 With KHS Colors">
+    </div>
 <footer style="text-align: center">
     <p>&copy; KHS Class of 2021. All rights reserved. Do not distribute any of the content featured here without prior written consent!!</p>
 </footer>
